@@ -1,0 +1,172 @@
+.dropdown-content {
+  position: static;
+}
+
+.primary-overlay {
+  background: rgba(112, 81, 176, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-header {
+  background: url(../img/cover1.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 660px;
+  color: #fff;
+}
+
+.main-header .showcase {
+  padding-top: 100px;
+}
+
+.main-header-inner {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  color: #fff;
+}
+
+.main-header-inner .showcase {
+  padding-top: 50px;
+}
+
+.active-link {
+  color: #ff5722;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.section-developers {
+  position: relative;
+  background: url(../img/code.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top: #333 solid 5px;
+  border-bottom: #333 solid 5px;
+  min-height: 160px;
+}
+
+.section-podcast {
+  position: relative;
+  background: url(../img/circuit.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top: #333 solid 5px;
+  border-bottom: #333 solid 5px;
+  min-height: 160px;
+}
+
+.section-podcast a {
+  margin-top: 30px;
+}
+
+.section-podcast .primary-overlay {
+  background: rgba(112, 81, 176, 0.9);
+}
+
+.carousel-item p {
+  font-size: 20px !important;
+}
+
+.tabs .indicator {
+  background-color: #6a1b9a !important;
+}
+
+.btn-extend {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .section-developers,
+  .section-podcast {
+    min-height: 240px;
+  }
+}
+
+.logo-img {
+  width: auto;
+  height: 60px;
+}
+
+.new-arrival {
+  top: 5px;
+  right: 5px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.card-image {
+  cursor: pointer;
+}
+
+.x {
+  padding-right: 5px;
+}
+
+.test::after {
+  content: '';
+  background-image: url('https://scontent.fbkk8-3.fna.fbcdn.net/v/t1.0-9/40684859_234406070569687_2497706216302575616_n.jpg?_nc_cat=100&_nc_ht=scontent.fbkk8-3.fna&oh=71407b781f00303a1118222d4748ebea&oe=5C6DD559');
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
+.test:hover::after {
+  background-image: url('https://scontent.fbkk12-3.fna.fbcdn.net/v/t1.0-9/45662321_252451568765137_4071674901218459648_n.jpg?_nc_cat=110&_nc_ht=scontent.fbkk12-3.fna&oh=f46a4a1ad7e7dc0167b137f7c1bceb74&oe=5CA5C3D1');
+}
+
+.test1::after {
+  content: '';
+  background-image: url('https://scontent.fbkk9-2.fna.fbcdn.net/v/t1.0-9/41405982_236339200376374_2712208251843248128_n.jpg?_nc_cat=109&_nc_ht=scontent.fbkk9-2.fna&oh=8f3b6d8e20b99ad653abb294b60654e4&oe=5C782594');
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
+.test1:hover::after {
+  background-image: url('https://scontent.fbkk12-3.fna.fbcdn.net/v/t1.0-9/41375553_236339207043040_9061602256859693056_n.jpg?_nc_cat=110&_nc_ht=scontent.fbkk12-3.fna&oh=9a0fc4aae322e59704b63582817efd48&oe=5CAA67C2');
+}
+
+.test2::after {
+  content: '';
+  background-image: url('https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.0-9/40644808_234406130569681_4900396954174881792_n.jpg?_nc_cat=106&_nc_ht=scontent.fbkk12-1.fna&oh=8188300cf405db27c79c842cf329a8d4&oe=5CA3B484');
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
+.test2:hover::after {
+  background-image: url('https://scontent.fbkk13-1.fna.fbcdn.net/v/t1.0-9/40620381_234406140569680_2984208917245984768_n.jpg?_nc_cat=108&_nc_ht=scontent.fbkk13-1.fna&oh=7e5fbf58960b656bcbe457117cc54953&oe=5C6D5279');
+}
+
+.test3::after {
+  content: '';
+  background-image: url('https://scontent.fbkk8-2.fna.fbcdn.net/v/t1.0-9/40659331_234405997236361_757126301046800384_n.jpg?_nc_cat=107&_nc_ht=scontent.fbkk8-2.fna&oh=86f3e8cb6b6b7229826473c222effaef&oe=5C6B1FD4');
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
+.test3:hover::after {
+  background-image: url('https://scontent.fbkk8-2.fna.fbcdn.net/v/t1.0-9/40618931_234406013903026_3926533890268725248_n.jpg?_nc_cat=107&_nc_ht=scontent.fbkk8-2.fna&oh=fd0c081e48f6b722de49ea5881cae7fc&oe=5CAC13C3');
+}
