@@ -12,6 +12,12 @@ export function Item() {
   });
 }
 
+export function Selected() {
+  Router.push({
+    pathname: '/selected'
+  });
+}
+
 export function Admin() {
   Router.push({
     pathname: '/kamoo'

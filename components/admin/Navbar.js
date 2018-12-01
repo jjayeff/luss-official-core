@@ -24,10 +24,10 @@ class Index extends React.Component {
         <div className="container">
           <div className="nav-wrapper">
             <a onClick={Home} className="brand-logo black-text">
-              <img src={logo_main} className="logo-img" />
+              <img src={logo_main} className="logo-img cursor-pointer" />
             </a>
             <a
-              href="#"
+              href=""
               data-activates="side-nav"
               className="button-collapse show-on-large right black-text"
             >

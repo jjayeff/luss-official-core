@@ -1,4 +1,5 @@
 import React from 'react';
+import { Selected } from '../Router';
 
 class Item extends React.Component {
   render() {
@@ -57,7 +58,7 @@ class Item extends React.Component {
           <div className="row">
             <div className="col s6 m4 l3">
               <div className="card">
-                <div className="card-image test">
+                <div className="card-image test" onClick={Selected}>
                   <a className="btn-floating waves-effect waves-light grey darken-4 new-arrival center">
                     new
                   </a>
@@ -70,7 +71,7 @@ class Item extends React.Component {
             </div>
             <div className="col s6 m4 l3">
               <div className="card">
-                <div className="card-image test2">
+                <div className="card-image test2" onClick={Selected}>
                   <a className="btn-floating waves-effect waves-light grey darken-4 new-arrival center">
                     new
                   </a>
@@ -83,7 +84,7 @@ class Item extends React.Component {
             </div>
             <div className="col s6 m4 l3">
               <div className="card">
-                <div className="card-image test1">
+                <div className="card-image test1" onClick={Selected}>
                   <a className="btn-floating waves-effect waves-light grey darken-4 new-arrival center">
                     new
                   </a>
@@ -96,7 +97,7 @@ class Item extends React.Component {
             </div>
             <div className="col s6 m4 l3">
               <div className="card">
-                <div className="card-image test3">
+                <div className="card-image test3" onClick={Selected}>
                   <a className="btn-floating waves-effect waves-light grey darken-4 new-arrival center">
                     new
                   </a>
@@ -109,7 +110,7 @@ class Item extends React.Component {
             </div>
             <div className="col s6 m4 l3">
               <div className="card">
-                <div className="card-image">
+                <div className="card-image" onClick={Selected}>
                   <a className="btn-floating waves-effect waves-light grey darken-4 new-arrival center">
                     new
                   </a>
@@ -126,7 +127,7 @@ class Item extends React.Component {
             </div>
             <div className="col s6 m4 l3">
               <div className="card">
-                <div className="card-image">
+                <div className="card-image" onClick={Selected}>
                   <a className="btn-floating waves-effect waves-light grey darken-4 new-arrival center">
                     new
                   </a>

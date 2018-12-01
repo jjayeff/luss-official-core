@@ -97,13 +97,14 @@ module.exports =
 /*!******************************!*\
   !*** ./components/Router.js ***!
   \******************************/
-/*! exports provided: Home, Item, Admin, Posts, Users, Comments */
+/*! exports provided: Home, Item, Selected, Admin, Posts, Users, Comments */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Home", function() { return Home; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Item", function() { return Item; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Selected", function() { return Selected; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Admin", function() { return Admin; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Posts", function() { return Posts; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Users", function() { return Users; });
@@ -119,6 +120,11 @@ function Home() {
 function Item() {
   next_router__WEBPACK_IMPORTED_MODULE_0___default.a.push({
     pathname: '/item'
+  });
+}
+function Selected() {
+  next_router__WEBPACK_IMPORTED_MODULE_0___default.a.push({
+    pathname: '/selected'
   });
 }
 function Admin() {
@@ -577,14 +583,14 @@ function (_React$Component) {
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: _img_logo_black_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-        className: "logo-img",
+        className: "logo-img cursor-pointer",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 27
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#",
+        href: "",
         "data-activates": "side-nav",
         className: "button-collapse show-on-large right black-text",
         __source: {
