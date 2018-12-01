@@ -170,3 +170,22 @@
 .test3:hover::after {
   background-image: url('https://scontent.fbkk8-2.fna.fbcdn.net/v/t1.0-9/40618931_234406013903026_3926533890268725248_n.jpg?_nc_cat=107&_nc_ht=scontent.fbkk8-2.fna&oh=fd0c081e48f6b722de49ea5881cae7fc&oe=5CAC13C3');
 }
+
+.side-nav .user-view .circle,
+.side-nav .userView .circle {
+  height: 64px;
+  width: 64px;
+}
+
+.side-nav .user-view .background,
+.side-nav .userView .background {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 300px;
+  height: 176px;
+}
