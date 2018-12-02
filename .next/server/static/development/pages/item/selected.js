@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1486,34 +1486,60 @@ function (_React$Component) {
       });
     }
   }, {
+    key: "renderSelectSize",
+    value: function renderSelectSize(sizes) {
+      if (sizes.length == 4) {
+        return sizes.map(function (size, index) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+            defaultValue: size,
+            key: index,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 54
+            },
+            __self: this
+          }, size);
+        });
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+          defaultValue: sizes,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 59
+          },
+          __self: this
+        }, sizes);
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 65
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col s12 m7",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 67
         },
         __self: this
       }, this.renderImgViewsContent(this.props.data.img)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 70
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -1523,81 +1549,81 @@ function (_React$Component) {
         height: "auto",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 71
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col s12 m5",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 79
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 80
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 81
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "card-title ",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 82
         },
         __self: this
-      }, "LUSS \u201CHigh Score\u201D List Tee"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, this.props.data.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 83
         },
         __self: this
-      }, "Color : Black"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, "Color : ", this.props.data.color), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 84
         },
         __self: this
-      }, "Size : S / M / L / XL")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Size :", this.props.data.size.length == 4 ? ' S / M / L / XL' : ' One Size')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-action",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 91
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "green-text",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 92
         },
         __self: this
       }, "In stock"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "card-title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 93
         },
         __self: this
-      }, "\u0E3F890"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "\u0E3F", this.props.data.price), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "input-field",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 94
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 95
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -1606,150 +1632,122 @@ function (_React$Component) {
         selected: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 96
         },
         __self: this
-      }, "Select Option"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        defaultValue: "1",
+      }, "Select Option"), this.renderSelectSize(this.props.data.size)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
-        },
-        __self: this
-      }, "S"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        defaultValue: "2",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 83
-        },
-        __self: this
-      }, "M"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        defaultValue: "3",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 84
-        },
-        __self: this
-      }, "L"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
-        defaultValue: "4",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 85
-        },
-        __self: this
-      }, "XL")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 101
         },
         __self: this
       }, "SIZE ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "red-text",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 102
         },
         __self: this
       }, "*"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "btn red  waves-effect waves-white",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 105
         },
         __self: this
       }, "ADD TO CART"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "btn white red-text waves-effect waves-red",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 108
         },
         __self: this
       }, "ADD TO WISHLIST"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-tabs",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 111
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "tabs tabs-width-fixed",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 112
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "tab",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 113
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#tab1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 114
         },
         __self: this
       }, "Description")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "tab",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 116
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#tab2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 117
         },
         __self: this
       }, "Additional Information")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 121
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "tab1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 122
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "card-title ",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 123
         },
         __self: this
-      }, "LUSS \u201CHigh Score\u201D List Tee"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, this.props.data.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 124
         },
         __self: this
-      }, "Color : Black"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, "Color : ", this.props.data.color), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113
+          lineNumber: 125
         },
         __self: this
-      }, "Size : S / M / L / XL"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, "Size :", ' ', this.props.data.size.length == 4 ? ' S / M / L / XL' : ' One Size'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 131
         },
         __self: this
-      }, "Price : 890 bath.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Price : ", this.props.data.price, " bath.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "tab2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 133
         },
         __self: this
       }, "???"))))));
@@ -2201,7 +2199,7 @@ var postLogout = function postLogout(url, json) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!**************************************!*\
   !*** multi ./pages/item/selected.js ***!
   \**************************************/

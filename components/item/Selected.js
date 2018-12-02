@@ -48,6 +48,18 @@ class Selected extends React.Component {
     });
   }
 
+  renderSelectSize(sizes) {
+    if (sizes.length == 4) {
+      return sizes.map((size, index) => (
+        <option defaultValue={size} key={index}>
+          {size}
+        </option>
+      ));
+    } else {
+      return <option defaultValue={sizes}>{sizes}</option>;
+    }
+  }
+
   render() {
     return (
       <div className="row">
@@ -67,22 +79,24 @@ class Selected extends React.Component {
         <div className="col s12 m5">
           <div className="card">
             <div className="card-content">
-              <span className="card-title ">LUSS “High Score” List Tee</span>
-              <p>Color : Black</p>
-              <p>Size : S / M / L / XL</p>
+              <span className="card-title ">{this.props.data.name}</span>
+              <p>Color : {this.props.data.color}</p>
+              <p>
+                Size :
+                {this.props.data.size.length == 4
+                  ? ' S / M / L / XL'
+                  : ' One Size'}
+              </p>
             </div>
             <div className="card-action">
               <p className="green-text">In stock</p>
-              <span className="card-title">฿890</span>
+              <span className="card-title">฿{this.props.data.price}</span>
               <div className="input-field">
                 <select>
                   <option defaultValue="" disabled selected>
                     Select Option
                   </option>
-                  <option defaultValue="1">S</option>
-                  <option defaultValue="2">M</option>
-                  <option defaultValue="3">L</option>
-                  <option defaultValue="4">XL</option>
+                  {this.renderSelectSize(this.props.data.size)}
                 </select>
                 <label>
                   SIZE <span className="red-text">*</span>
@@ -106,12 +120,15 @@ class Selected extends React.Component {
               </div>
               <div className="card-content">
                 <div id="tab1">
-                  <span className="card-title ">
-                    LUSS “High Score” List Tee
-                  </span>
-                  <p>Color : Black</p>
-                  <p>Size : S / M / L / XL</p>
-                  <p>Price : 890 bath.</p>
+                  <span className="card-title ">{this.props.data.name}</span>
+                  <p>Color : {this.props.data.color}</p>
+                  <p>
+                    Size :{' '}
+                    {this.props.data.size.length == 4
+                      ? ' S / M / L / XL'
+                      : ' One Size'}
+                  </p>
+                  <p>Price : {this.props.data.price} bath.</p>
                 </div>
                 <div id="tab2">???</div>
               </div>

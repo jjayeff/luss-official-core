@@ -28934,7 +28934,7 @@ var postLogout = function postLogout(url, json) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -28959,5 +28959,5 @@ module.exports = dll_52339ab353c8e0db40da;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js","styles"]]]));;
+},[[3,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=index.js.map
