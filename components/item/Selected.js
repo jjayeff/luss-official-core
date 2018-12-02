@@ -25,7 +25,7 @@ class Selected extends React.Component {
   }
 
   renderImgViewsContent(imgs) {
-    return imgs.map(img => {
+    return imgs.map(function(img) {
       if (img == this.state.imgActive) {
         return (
           <img

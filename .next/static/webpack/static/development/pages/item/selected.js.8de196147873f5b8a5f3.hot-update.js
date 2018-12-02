@@ -52,7 +52,7 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Selected).call(this, props));
     _this.state = {
-      imgActive: _this.props.data.img[0]
+      imgActive: ''
     };
     return _this;
   }
@@ -74,14 +74,12 @@ function (_React$Component) {
   }, {
     key: "renderImgViewsContent",
     value: function renderImgViewsContent(imgs) {
-      var _this2 = this;
-
       return imgs.map(function (img) {
-        if (img == _this2.state.imgActive) {
+        if (img == this.state.imgActive) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
             src: img,
             className: "img-views-content active-img",
-            onClick: _this2.headleSelectedImgView.bind(_this2, img),
+            onClick: this.headleSelectedImgView.bind(this, img),
             key: img,
             __source: {
               fileName: _jsxFileName,
@@ -93,7 +91,7 @@ function (_React$Component) {
           return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
             src: img,
             className: "img-views-content",
-            onClick: _this2.headleSelectedImgView.bind(_this2, img),
+            onClick: this.headleSelectedImgView.bind(this, img),
             key: img,
             __source: {
               fileName: _jsxFileName,
@@ -356,17 +354,17 @@ function (_React$Component) {
           lineNumber: 125
         },
         __self: this
-      }, "Size : S / M / L / XL"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, "Size :", ' ', this.props.data.size.length == 4 ? ' S / M / L / XL' : ' One Size'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126
+          lineNumber: 131
         },
         __self: this
       }, "Price : ", this.props.data.price, " bath.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "tab2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 133
         },
         __self: this
       }, "???"))))));
@@ -381,4 +379,4 @@ function (_React$Component) {
 /***/ })
 
 })
-//# sourceMappingURL=selected.js.998b516717aa155a221e.hot-update.js.map
+//# sourceMappingURL=selected.js.8de196147873f5b8a5f3.hot-update.js.map
