@@ -13,10 +13,13 @@
     "react": "^16.6.3",
     "react-chartjs-2": "^2.7.4",
     "react-dom": "^16.6.3",
-    "react-materialize": "^2.5.0"
+    "react-materialize": "^2.5.0",
+    "react-redux": "^5.1.1",
+    "redux": "^4.0.1",
+    "redux-saga": "^0.16.2"
   },
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next -p 8080",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "export": "npm run build && next export"

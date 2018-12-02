@@ -2,7 +2,7 @@ import Router from 'next/router';
 
 export function Home() {
   Router.push({
-    pathname: '/'
+    pathname: '/index'
   });
 }
 
@@ -12,9 +12,10 @@ export function Item() {
   });
 }
 
-export function Selected() {
+export function Selected(item) {
   Router.push({
-    pathname: '/selected'
+    pathname: '/item/selected',
+    query: item
   });
 }
 

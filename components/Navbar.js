@@ -37,8 +37,13 @@ class Index extends React.Component {
                 </a>
               </li>
               <li>
-                <a class="dropdown-button" data-target="my-dropdown" href="#">
-                  CATEGORY <i class="material-icons right">arrow_drop_down</i>
+                <a
+                  className="dropdown-button"
+                  data-target="my-dropdown"
+                  href="#"
+                >
+                  CATEGORY{' '}
+                  <i className="material-icons right">arrow_drop_down</i>
                 </a>
               </li>
               <li>
@@ -78,12 +83,14 @@ class Index extends React.Component {
               </li>
               <li>
                 <a
-                  class="dropdown-button black-text"
+                  className="dropdown-button black-text"
                   data-target="my-dropdown1"
                   href="#"
                 >
                   CATEGORY{' '}
-                  <i class="material-icons right black-text">arrow_drop_down</i>
+                  <i className="material-icons right black-text">
+                    arrow_drop_down
+                  </i>
                 </a>
               </li>
               <li>
@@ -100,19 +107,19 @@ class Index extends React.Component {
           </div>
         </div>
         {/* -- DropDown -- */}
-        <ul id="my-dropdown" class="dropdown-content">
+        <ul id="my-dropdown" className="dropdown-content">
           <li>
-            <a href="#" class="black-text">
+            <a href="#" className="black-text">
               T-SHIRTS
             </a>
           </li>
           <li>
-            <a href="#" class="black-text">
+            <a href="#" className="black-text">
               HATS
             </a>
           </li>
         </ul>
-        <ul id="my-dropdown1" class="dropdown-content">
+        <ul id="my-dropdown1" className="dropdown-content">
           <li>
             <a href="#">T-SHIRTS</a>
           </li>
@@ -143,12 +150,14 @@ class Index extends React.Component {
               </li>
               <li>
                 <a
-                  class="dropdown-button black-text"
+                  className="dropdown-button black-text"
                   data-target="my-dropdown"
                   href="#"
                 >
                   CATEGORY{' '}
-                  <i class="material-icons right black-text">arrow_drop_down</i>
+                  <i className="material-icons right black-text">
+                    arrow_drop_down
+                  </i>
                 </a>
               </li>
               <li>
@@ -188,12 +197,14 @@ class Index extends React.Component {
               </li>
               <li>
                 <a
-                  class="dropdown-button black-text"
+                  className="dropdown-button black-text"
                   data-target="my-dropdown1"
                   href="#"
                 >
                   CATEGORY{' '}
-                  <i class="material-icons right black-text">arrow_drop_down</i>
+                  <i className="material-icons right black-text">
+                    arrow_drop_down
+                  </i>
                 </a>
               </li>
               <li>
@@ -210,19 +221,19 @@ class Index extends React.Component {
           </div>
         </div>
         {/* -- DropDown -- */}
-        <ul id="my-dropdown" class="dropdown-content">
+        <ul id="my-dropdown" className="dropdown-content">
           <li>
-            <a href="#" class="black-text">
+            <a href="#" className="black-text">
               T-SHIRTS
             </a>
           </li>
           <li>
-            <a href="#" class="black-text">
+            <a href="#" className="black-text">
               HATS
             </a>
           </li>
         </ul>
-        <ul id="my-dropdown1" class="dropdown-content">
+        <ul id="my-dropdown1" className="dropdown-content">
           <li>
             <a href="#">T-SHIRTS</a>
           </li>

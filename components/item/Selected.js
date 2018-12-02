@@ -7,77 +7,108 @@ if (typeof window !== 'undefined') {
 }
 
 class Selected extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      imgActive: this.props.data.img[0]
+    };
+  }
+
   componentDidMount() {
     $('select').formSelect();
     $('.tabs').tabs();
     $('.materialboxed').materialbox();
   }
+
+  headleSelectedImgView(img) {
+    this.setState({ imgActive: img });
+  }
+
+  renderImgViewsContent(imgs) {
+    return imgs.map(img => {
+      if (img == this.state.imgActive) {
+        return (
+          <img
+            src={img}
+            className="img-views-content active-img"
+            onClick={this.headleSelectedImgView.bind(this, img)}
+            key={img}
+          />
+        );
+      } else {
+        return (
+          <img
+            src={img}
+            className="img-views-content"
+            onClick={this.headleSelectedImgView.bind(this, img)}
+            key={img}
+          />
+        );
+      }
+    });
+  }
+
   render() {
     return (
-      <div class="row">
-        <div class="col s12 m7">
-          <div class="center">
-            <img
-              src="https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.0-9/45488912_252451562098471_2981383455830441984_n.jpg?_nc_cat=101&_nc_ht=scontent.fbkk12-1.fna&oh=8be0962e6d81a2d2877624a7abbff26f&oe=5CA1645F"
-              class="img-views-content active-img"
-            />
-            <img
-              src="https://scontent.fbkk12-3.fna.fbcdn.net/v/t1.0-9/45662321_252451568765137_4071674901218459648_n.jpg?_nc_cat=110&_nc_ht=scontent.fbkk12-3.fna&oh=f46a4a1ad7e7dc0167b137f7c1bceb74&oe=5CA5C3D1"
-              class="img-views-content"
-            />
+      <div className="row">
+        <div className="col s12 m7">
+          <div className="center">
+            {this.renderImgViewsContent(this.props.data.img)}
           </div>
-          <div class="container">
+          <div className="container">
             <img
-              src="https://scontent.fbkk12-1.fna.fbcdn.net/v/t1.0-9/45488912_252451562098471_2981383455830441984_n.jpg?_nc_cat=101&_nc_ht=scontent.fbkk12-1.fna&oh=8be0962e6d81a2d2877624a7abbff26f&oe=5CA1645F"
-              class="materialboxed"
+              src={this.state.imgActive}
+              className="materialboxed"
               width="100%"
               height="auto"
             />
           </div>
         </div>
-        <div class="col s12 m5">
-          <div class="card">
-            <div class="card-content">
-              <span class="card-title ">LUSS “High Score” List Tee</span>
+        <div className="col s12 m5">
+          <div className="card">
+            <div className="card-content">
+              <span className="card-title ">LUSS “High Score” List Tee</span>
               <p>Color : Black</p>
               <p>Size : S / M / L / XL</p>
             </div>
-            <div class="card-action">
-              <p class="green-text">In stock</p>
-              <span class="card-title">฿890</span>
-              <div class="input-field">
+            <div className="card-action">
+              <p className="green-text">In stock</p>
+              <span className="card-title">฿890</span>
+              <div className="input-field">
                 <select>
-                  <option value="" disabled selected>
+                  <option defaultValue="" disabled selected>
                     Select Option
                   </option>
-                  <option value="1">S</option>
-                  <option value="2">M</option>
-                  <option value="3">L</option>
-                  <option value="4">XL</option>
+                  <option defaultValue="1">S</option>
+                  <option defaultValue="2">M</option>
+                  <option defaultValue="3">L</option>
+                  <option defaultValue="4">XL</option>
                 </select>
                 <label>
-                  SIZE <span class="red-text">*</span>
+                  SIZE <span className="red-text">*</span>
                 </label>
               </div>
-              <button class="btn red  waves-effect waves-white">
+              <button className="btn red  waves-effect waves-white">
                 ADD TO CART
               </button>
-              <button class="btn white red-text waves-effect waves-red">
+              <button className="btn white red-text waves-effect waves-red">
                 ADD TO WISHLIST
               </button>
-              <div class="card-tabs">
-                <ul class="tabs tabs-width-fixed">
-                  <li class="tab">
+              <div className="card-tabs">
+                <ul className="tabs tabs-width-fixed">
+                  <li className="tab">
                     <a href="#tab1">Description</a>
                   </li>
-                  <li class="tab">
+                  <li className="tab">
                     <a href="#tab2">Additional Information</a>
                   </li>
                 </ul>
               </div>
-              <div class="card-content">
+              <div className="card-content">
                 <div id="tab1">
-                  <span class="card-title ">LUSS “High Score” List Tee</span>
+                  <span className="card-title ">
+                    LUSS “High Score” List Tee
+                  </span>
                   <p>Color : Black</p>
                   <p>Size : S / M / L / XL</p>
                   <p>Price : 890 bath.</p>
