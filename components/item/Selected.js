@@ -10,7 +10,7 @@ class Selected extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      imgActive: this.props.data.img[0]
+      imgActive: ''
     };
   }
 
@@ -18,6 +18,8 @@ class Selected extends React.Component {
     $('select').formSelect();
     $('.tabs').tabs();
     $('.materialboxed').materialbox();
+    if (this.props.data != undefined)
+      this.setState({ imgActive: this.props.data.img[0] });
   }
 
   headleSelectedImgView(img) {
@@ -25,39 +27,41 @@ class Selected extends React.Component {
   }
 
   renderImgViewsContent(imgs) {
-    return imgs.map(img => {
-      if (img == this.state.imgActive) {
-        return (
-          <img
-            src={img}
-            className="img-views-content active-img"
-            onClick={this.headleSelectedImgView.bind(this, img)}
-            key={img}
-          />
-        );
-      } else {
-        return (
-          <img
-            src={img}
-            className="img-views-content"
-            onClick={this.headleSelectedImgView.bind(this, img)}
-            key={img}
-          />
-        );
-      }
-    });
+    if (this.props.data != undefined)
+      return imgs.map(img => {
+        if (img == this.state.imgActive) {
+          return (
+            <img
+              src={img}
+              className="img-views-content active-img"
+              onClick={this.headleSelectedImgView.bind(this, img)}
+              key={img}
+            />
+          );
+        } else {
+          return (
+            <img
+              src={img}
+              className="img-views-content"
+              onClick={this.headleSelectedImgView.bind(this, img)}
+              key={img}
+            />
+          );
+        }
+      });
   }
 
   renderSelectSize(sizes) {
-    if (sizes.length == 4) {
-      return sizes.map((size, index) => (
-        <option defaultValue={size} key={index}>
-          {size}
-        </option>
-      ));
-    } else {
-      return <option defaultValue={sizes}>{sizes}</option>;
-    }
+    if (this.props.data != undefined)
+      if (sizes.length == 4) {
+        return sizes.map((size, index) => (
+          <option defaultValue={size} key={index}>
+            {size}
+          </option>
+        ));
+      } else {
+        return <option defaultValue={sizes}>{sizes}</option>;
+      }
   }
 
   render() {
