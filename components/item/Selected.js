@@ -10,7 +10,7 @@ class Selected extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      imgActive: ''
+      imgActive: this.props.data.img[0]
     };
   }
 
@@ -25,7 +25,7 @@ class Selected extends React.Component {
   }
 
   renderImgViewsContent(imgs) {
-    return imgs.map(function(img) {
+    return imgs.map(img => {
       if (img == this.state.imgActive) {
         return (
           <img
