@@ -51,6 +51,7 @@ function (_React$Component) {
     _classCallCheck(this, Selected);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Selected).call(this, props));
+    console.log(props);
     _this.state = {
       imgActive: ''
     };
@@ -63,9 +64,6 @@ function (_React$Component) {
       $('select').formSelect();
       $('.tabs').tabs();
       $('.materialboxed').materialbox();
-      if (this.props.data != undefined) this.setState({
-        imgActive: this.props.data.img[0]
-      });
     }
   }, {
     key: "headleSelectedImgView",
@@ -88,7 +86,7 @@ function (_React$Component) {
             key: img,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 33
+              lineNumber: 32
             },
             __self: this
           });
@@ -100,7 +98,7 @@ function (_React$Component) {
             key: img,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 42
+              lineNumber: 41
             },
             __self: this
           });
@@ -117,7 +115,7 @@ function (_React$Component) {
             key: index,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 56
+              lineNumber: 55
             },
             __self: this
           }, size);
@@ -127,7 +125,7 @@ function (_React$Component) {
           defaultValue: sizes,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 61
+            lineNumber: 60
           },
           __self: this
         }, sizes);
@@ -140,28 +138,28 @@ function (_React$Component) {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col s12 m7",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 67
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 68
         },
         __self: this
       }, this.renderImgViewsContent(this.props.data.img)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 71
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -171,81 +169,81 @@ function (_React$Component) {
         height: "auto",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 72
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col s12 m5",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 80
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 81
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 82
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "card-title ",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 83
         },
         __self: this
       }, this.props.data.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 84
         },
         __self: this
       }, "Color : ", this.props.data.color), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 85
         },
         __self: this
       }, "Size :", this.props.data.size.length == 4 ? ' S / M / L / XL' : ' One Size')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-action",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 92
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "green-text",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 93
         },
         __self: this
       }, "In stock"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "card-title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 94
         },
         __self: this
       }, "\u0E3F", this.props.data.price), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "input-field",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 95
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 96
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -254,122 +252,122 @@ function (_React$Component) {
         selected: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 97
         },
         __self: this
       }, "Select Option"), this.renderSelectSize(this.props.data.size)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 102
         },
         __self: this
       }, "SIZE ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "red-text",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104
+          lineNumber: 103
         },
         __self: this
       }, "*"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "btn red  waves-effect waves-white",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 106
         },
         __self: this
       }, "ADD TO CART"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "btn white red-text waves-effect waves-red",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 109
         },
         __self: this
       }, "ADD TO WISHLIST"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-tabs",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113
+          lineNumber: 112
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "tabs tabs-width-fixed",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 113
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "tab",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 114
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#tab1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 115
         },
         __self: this
       }, "Description")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "tab",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118
+          lineNumber: 117
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#tab2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119
+          lineNumber: 118
         },
         __self: this
       }, "Additional Information")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card-content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 123
+          lineNumber: 122
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "tab1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124
+          lineNumber: 123
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "card-title ",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125
+          lineNumber: 124
         },
         __self: this
       }, this.props.data.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126
+          lineNumber: 125
         },
         __self: this
       }, "Color : ", this.props.data.color), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 126
         },
         __self: this
       }, "Size :", ' ', this.props.data.size.length == 4 ? ' S / M / L / XL' : ' One Size'), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 133
+          lineNumber: 132
         },
         __self: this
       }, "Price : ", this.props.data.price, " bath.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "tab2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 135
+          lineNumber: 134
         },
         __self: this
       }, "???"))))));
@@ -384,4 +382,4 @@ function (_React$Component) {
 /***/ })
 
 })
-//# sourceMappingURL=selected.js.34ca984dc433b124f806.hot-update.js.map
+//# sourceMappingURL=selected.js.353428d25a90d3a9b443.hot-update.js.map
