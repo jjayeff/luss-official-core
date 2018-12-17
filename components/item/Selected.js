@@ -64,9 +64,7 @@ class Selected extends React.Component {
     return (
       <div className="row">
         <div className="col s12 m7">
-          <div className="center">
-            {this.renderImgViewsContent(this.props.data.img)}
-          </div>
+          <div className="center" />
           <div className="container">
             <img
               src={this.state.imgActive}
