@@ -10,7 +10,7 @@ class Selected extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      imgActive: props.data.img[0]
+      imgActive: ''
     };
   }
 
